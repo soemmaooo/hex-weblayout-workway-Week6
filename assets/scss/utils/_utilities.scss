@@ -1,0 +1,164 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+.fs-small{
+  font-size: $small-font-size;
+}
+
+.fs-xs{
+  font-size: 12px;
+}
+
+.white-nowrap{
+  white-space: nowrap;
+}
+
+.btn-icon{
+  padding: 0.75rem 0.5rem 0.75rem 0.75rem;
+}
+
+.btn-primary{
+  background-color: $dark;
+  color: $white;
+  &:hover{
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    color: $dark;
+  }
+}
+
+.card-tag {
+  border-radius: 24px 0 12px 0;
+  padding: 8px 16px;
+}
+
+.text-Inter{
+  font-family: "Inter", sans-serif;
+}
+
+//下箭頭邊框-首頁、關於 
+/*箭頭下*/
+.dialog {
+
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  border: solid 2px $primary-60;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $primary-60;
+}
+
+.dialog .arrow_b_int {
+  width: 0px;
+  height: 0px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: $primary-60 transparent transparent transparent;
+  position: absolute;
+  bottom: -30px;
+  right: 45px;
+}
+
+/*邊框*/
+.dialog .arrow_b_out {
+  width: 0px;
+  height: 0px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: -27px;
+  right: 45px;
+}
+// 下箭頭邊框結束
+
+// swiper模組 - 首頁、關於
+.swiper {
+  overflow: visible;
+  overflow-x: clip;
+}
+
+
+.swiper-slide {
+  height: auto;
+  min-width: 320px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+// 白色折角
+.horn {
+  position: relative;
+
+  .story-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.horn:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent #ffffff transparent;
+}
+// swiper模組 - 結束
+
+
+.line-dash{
+    border-bottom: 1px dashed $natural-85;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+
+@media (max-width: 767px) {
+    
+}
+
+@media (min-width: 768px) {
+.fs-2.display-md-1{
+  font-size: 80px !important;
+}
+.nav-link{
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-icon{
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+}
+
+.border-md{
+  border: 1px solid $natural-85;
+}
+.fs-md-normal{
+  font-size: $font-size-base;
+}
+.line-dash{
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+}

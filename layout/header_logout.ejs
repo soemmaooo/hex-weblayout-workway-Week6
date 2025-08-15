@@ -1,0 +1,214 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom py-3">
+  <div class="container">
+    <a class="navbar-brand logo-w" href="index.html">
+      <img src="/assets/images/logo.svg" alt="logo">
+    </a>
+
+
+    <button type="button" class="btn border rounded-1 px-4 px-md-5 order-lg-3 ms-auto me-3" data-bs-toggle="modal"
+      data-bs-target="#loginModal">
+      登入/註冊
+    </button>
+
+    <!-- Modal 登入 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-w-h rounded-3 overflow-hidden p-6">
+        <div class="modal-content flex-row">
+          <!-- 左邊圖片 -->
+          <div class="modal-img-w d-none d-lg-block">
+            <img class="rounded-start h-100" src="/assets/images/header/login.png" alt="登入">
+          </div>
+          <!-- 右邊內容 -->
+          <div class="container-fluid p-5 p-md-6 d-flex flex-column position-relative">
+            <!-- 關閉按鈕 -->
+            <div class="position-absolute top-0 end-0 m-5">
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                <span class="material-symbols-outlined">
+                  close
+                </span>
+              </button>
+            </div>
+
+            <h5 class="fs-3 fs-md-2 text-center mb-5 mb-md-6" id="loginModalLabel">登入</h5>
+            <!-- 快速登入按鈕 -->
+            <button type="button"
+              class="btn btn-icon border rounded-2 d-grid d-flex justify-content-center align-items-center mb-4">
+              <img class="me-1" src="/assets/images/header/google.svg" alt="google">
+              <p>Google</p>
+            </button>
+            <button type="button"
+              class="btn btn-icon border rounded-2 d-grid d-flex justify-content-center align-items-center mb-5">
+              <img class="me-1" src="/assets/images/header/discord.svg" alt="google">
+              <p>Discord</p>
+            </button>
+
+            <div class="border-bottom mb-5"></div>
+
+            <!-- 帳號 -->
+            <div class="form-floating  mb-4 mb-md-5">
+              <input type="text" class="form-control" id="account" placeholder="帳號">
+              <label for="account">帳號</label>
+            </div>
+            <!-- 密碼 -->
+            <div class="form-floating position-relative mb-4 mb-md-5">
+              <input type="password" class="form-control pe-5" id="password" placeholder="密碼">
+              <label for="password">密碼</label>
+              <span id="togglePassword" data-target="password"
+                class="material-symbols-outlined position-absolute end-0 top-50 translate-middle-y me-3"
+                style="cursor:pointer;">
+                visibility_off
+              </span>
+            </div>
+            <!-- 忘記密碼 -->
+            <a class="inline-block ms-auto fs-small text-natural-50 mb-4" href="#">忘記密碼</a>
+            <!-- 送出按鈕 -->
+            <button type="button"
+              class="btn btn-icon btn-primary rounded-4 d-flex justify-content-center align-items-center mx-auto mx-md-0 mb-5 mb-md-6">
+              送出
+              <span class="material-symbols-outlined ps-1">chevron_forward</span>
+            </button>
+            <!-- 快速註冊 -->
+            <div class="mx-auto">
+              <span class="text-natural-50">不是會員？</span>
+              <a class="d-inline-block text-primary text-decoration-underline" href="#" data-bs-target="#registerModal" data-bs-toggle="modal">快速註冊</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Modal 註冊 -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-w-h rounded-3 overflow-hidden p-6">
+        <div class="modal-content flex-row">
+          
+          <!-- 左邊內容 -->
+          <div class="container-fluid p-5 p-md-6 d-flex flex-column position-relative">
+            <!-- 關閉按鈕 -->
+            <div class="position-absolute top-0 end-0 m-5">
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                <span class="material-symbols-outlined">
+                  close
+                </span>
+              </button>
+            </div>
+
+            <h5 class="fs-3 fs-md-2 text-center mb-5 mb-md-6" id="registerModalLabel">註冊</h5>
+            <!-- 快速登入按鈕 -->
+            <button type="button"
+              class="btn btn-icon border rounded-2 d-grid d-flex justify-content-center align-items-center mb-4">
+              <img class="me-1" src="/assets/images/header/google.svg" alt="google">
+              <p>Google</p>
+            </button>
+            <button type="button"
+              class="btn btn-icon border rounded-2 d-grid d-flex justify-content-center align-items-center mb-5">
+              <img class="me-1" src="/assets/images/header/discord.svg" alt="google">
+              <p>Discord</p>
+            </button>
+
+            <div class="border-bottom mb-5"></div>
+
+            <!-- 帳號 -->
+            <div class="form-floating  mb-4 mb-md-5">
+              <input type="text" class="form-control" id="account" placeholder="帳號">
+              <label for="account">帳號</label>
+            </div>
+            <!-- 密碼 -->
+            <div class="form-floating position-relative mb-4 mb-md-5">
+              <input type="password" class="form-control pe-5" id="registerPassword" placeholder="密碼">
+              <label for="registerPassword">密碼</label>
+              <span id="toggleregisterPassword" data-target="registerPassword"
+                class="material-symbols-outlined position-absolute end-0 top-50 translate-middle-y me-3"
+                style="cursor:pointer;">
+                visibility_off
+              </span>
+            </div>
+            <!-- 再次輸入密碼 -->
+            <div class="form-floating position-relative mb-4 mb-md-5">
+              <input type="password" class="form-control pe-5" id="registerAgainPassword" placeholder="再次輸入密碼">
+              <label for="registerAgainPassword">再次輸入密碼</label>
+              <span id="toggleregisterAgainPassword" data-target="registerAgainPassword"
+                class="material-symbols-outlined position-absolute end-0 top-50 translate-middle-y me-3"
+                style="cursor:pointer;">
+                visibility_off
+              </span>
+            </div>
+            <!-- 忘記密碼 -->
+            <a class="inline-block ms-auto fs-small text-natural-50 mb-4" href="#">忘記密碼</a>
+            <!-- 送出按鈕 -->
+            <button type="button"
+              class="btn btn-icon btn-primary rounded-4 d-flex justify-content-center align-items-center mx-auto mx-md-0 mb-5 mb-md-6">
+              送出
+              <span class="material-symbols-outlined ps-1">chevron_forward</span>
+            </button>
+            <!-- 快速登入 -->
+            <div class="mx-auto">
+              <span class="text-natural-50">不是會員？</span>
+              <a class="d-inline-block text-primary text-decoration-underline" href="#" data-bs-target="#loginModal" data-bs-toggle="modal">快速登入</a>
+            </div>
+          </div>
+          <!-- 右邊圖片 -->
+          <div class="modal-img-w d-none d-lg-block">
+            <img class="rounded-end h-100" src="/assets/images/header/register.png" alt="註冊">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="navbar-toggler border-0 order-lg-2" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex flex-column h-100">
+        <div class="d-lg-flex align-items-center">
+          <div class="d-flex justify-content-end mt-5 me-5">
+            <!-- 關閉按鈕 -->
+            <button type="button" class="btn p-3 d-lg-none" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-label="Close">
+              <span class="material-symbols-outlined">
+                close
+              </span>
+            </button>
+          </div>
+          <!-- 選單列表 -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link py-4 px-4 px-md-5 text-black text-center" href="service.html">服務方案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 px-4 px-md-5 text-black text-center" href="about.html">關於職旅</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 px-4 px-md-5 text-black text-center" href="content.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 綠色登入註冊按鈕 -->
+        <div class="d-grid mt-auto mx-5 mb-5 d-lg-none">
+          <button type="button" class="btn rounded-2 bg-secondary-50 py-2 py-md-3 fs-5 fs-md-4 fw-bold">登入/註冊
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+// filepath: /Users/emma/Desktop/webEmma/hex-weblayout-week6/layout/header_logout.ejs
+document.querySelectorAll('.material-symbols-outlined[data-target]').forEach(function(icon){
+  icon.addEventListener('click', function(){
+    const inputId = this.getAttribute('data-target');
+    const passwordInput = document.getElementById(inputId);
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      this.textContent = 'visibility';
+    } else {
+      passwordInput.type = 'password';
+      this.textContent = 'visibility_off';
+    }
+  });
+});
+</script>

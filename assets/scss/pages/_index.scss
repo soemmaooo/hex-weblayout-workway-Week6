@@ -1,0 +1,93 @@
+.hero-bg {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  max-width: 815px;
+}
+
+//參考助教Billy的作法
+.index-story-row{
+  margin-right: calc(-50vw + 50% + 24px);
+}
+
+.choose-bg-top {
+  height: 200px;
+  background-color: $natural-95;
+  margin-top: -200px;
+}
+
+.choose-bg {
+  background-color: $natural-95;
+
+}
+
+
+
+
+.choose-tag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 12px 0 0;
+  padding: 12px 24px 12px 12px;
+
+}
+
+.partner-bg {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-size: contain;
+  background-position: right -180px top 140px;
+  background-repeat: no-repeat;
+}
+
+.flow-bg {
+  background-color: $primary-60;
+}
+
+
+.QA-bg {
+  background-image: url(/assets/images/index/bg-grid.png);
+  background-position: top;
+  background-repeat: repeat;
+
+  .accordion-item {
+    margin-bottom: 1rem;
+    /* 每個 accordion-item 間距 */
+    border-radius: 0.5rem;
+    /* 圓角 */
+    overflow: hidden;
+    /* 確保內容不溢出圓角 */
+    border: 1px solid #dee2e6;
+    /* 自訂邊框顏色 */
+  }
+
+  .accordion-body {
+    border-top: 1px dashed $natural-85;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+
+  /* 讓按鈕也有圓角，並避免展開時被切掉 */
+  .accordion-button {
+    border-radius: 0;
+    /* 預設取消 */
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  
+
+}
+
+

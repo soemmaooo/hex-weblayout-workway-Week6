@@ -1,0 +1,29 @@
+.user-img{
+    width: 44px;
+    height: 44px;
+}
+
+.modal-w-h{
+  max-width: 1200px;
+  max-height: 720px;
+}
+
+.modal-img-w{
+  max-width: 700px;
+}
+
+@media (max-width: 960px) {
+  .logo-w{
+    width: 100px;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    z-index: 100;
+    
+  }
+}

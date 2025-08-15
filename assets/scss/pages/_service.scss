@@ -1,0 +1,53 @@
+.banner-bg {
+    background-image: url(/assets/images/service/banner-bg-pc.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.banner-text-w {
+    max-width: 840px;
+}
+
+.girl-position {
+    right: 128px;
+    bottom: -8px;
+}
+
+.plan-img-w {
+    max-width: 300px;
+}
+
+.service-bg-bottom {
+    height: 380px;
+    background-color: $natural-95;
+    margin-bottom: -380px;
+
+}
+
+.sub-bg {
+    background-image: url(/assets/images/service/subscribe-3.svg);
+
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: $secondary-90;
+}
+
+.sub-boy-position {
+    bottom: 0;
+    left: 24px;
+}
+
+.sub-girl-position {
+    bottom: 0;
+    right: 24px;
+}
+
+@media (max-width: 1024px) {
+    .banner-bg {
+        background-image: url(/assets/images/service/banner-bg.png);
+        background-size: 50%;
+        background-repeat: repeat;
+    }
+
+}

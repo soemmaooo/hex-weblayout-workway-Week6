@@ -1,0 +1,28 @@
+
+
+.tab-btn-bg{
+    .nav-link{
+        background-color: $white;
+    }
+}
+
+.password-modal{
+    width: 480px;
+}
+
+
+  .table > :not(caption) > * > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 767px) {
+  .table > :not(caption) > * > * {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.side-width{
+    width: 300px;
+}
+}
+
