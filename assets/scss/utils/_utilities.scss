@@ -20,6 +20,12 @@ $utilities: map-merge(
   white-space: nowrap;
 }
 
+.middle-line{
+  height: 1px;
+  background-color: $natural-85;
+  width: 70%;
+}
+
 .btn-icon{
   padding: 0.75rem 0.5rem 0.75rem 0.75rem;
 }

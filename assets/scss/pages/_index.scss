@@ -17,11 +17,16 @@
   margin-top: -200px;
 }
 
-.choose-bg {
-  background-color: $natural-95;
-
+.choose-card{
+  background-color: $black;
+  opacity: 0;
+  transition: opacity .3s ease;
 }
 
+.choose-card:hover {
+  
+  opacity: 0.6;
+}
 
 
 
